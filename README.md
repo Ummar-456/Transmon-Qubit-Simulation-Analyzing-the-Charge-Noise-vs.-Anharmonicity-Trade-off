@@ -35,10 +35,9 @@ This simulation numerically constructs this Hamiltonian matrix using the **QuTiP
 
 The script `2_transmon_parametersweep.py` generates the following plot, which tells the complete story of the transmon design.
 
-*(**Note:** After running the script, replace this placeholder with the generated `transmon_tradeoff_plot.png` file.)*
 *<p align="center">Figure 1: Simulation results showing Qubit Frequency, Anharmonicity, and Charge Dispersion as a function of the E_J/E_C ratio.</p>*
 <p align="center">
-  <img src="![transmon_tradeoff_plot](https://github.com/user-attachments/assets/1b49fcfb-8250-40a4-8ded-b5cc316f6a8b)" width="800">
+  <img src="https://github.com/user-attachments/assets/1b49fcfb-8250-40a4-8ded-b5cc316f6a8b" width="800">
 </p>
 
 ### Interpretation of Results
@@ -46,7 +45,6 @@ The script `2_transmon_parametersweep.py` generates the following plot, which te
 * **The Cost (Middle Panel):** The Anharmonicity plot shows that as the $E_J/E_C$ ratio increases, the anharmonicity becomes less negative, approaching a limit of $-E_C$. This is the "cost" of operating in the transmon regime; the energy levels become more evenly spaced, making it slightly harder to isolate the qubit as a perfect two-level system.
 
 * **The Benefit (Bottom Panel):** The Charge Dispersion plot provides the crucial other half of the story. On a logarithmic scale, the sensitivity to charge noise drops in a near-straight line, indicating an **exponential suppression** of charge noise. At low $E_J/E_C$ ratios, the qubit's frequency is highly unstable, while at high ratios ($E_J/E_C > 50$), it becomes exceptionally stable.
-
 ## 5. Conclusion
 
 This simulation quantitatively demonstrates the fundamental engineering compromise of the transmon qubit. By choosing to operate at a high $E_J/E_C$ ratio, designers accept a modest decrease in anharmonicity in exchange for an enormous, exponential gain in coherence and stability. This project showcases the ability to model quantum hardware from first principles and analyze the critical design decisions that enable today's leading quantum processors.
